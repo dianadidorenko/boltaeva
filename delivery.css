@@ -1,0 +1,130 @@
+@import url(style.scss);
+.delivery {
+  padding: 134px 314px 139px 317px;
+}
+
+.delivery__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--primary-color);
+  font-family: "CeraProReg";
+}
+
+.about_delivery-back-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 12.65px;
+     -moz-column-gap: 12.65px;
+          column-gap: 12.65px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.delivery__body-title {
+  padding-top: 29px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-bottom: 29px;
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: -0.03em;
+}
+
+.delivery-img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.delivery-p {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-family: "CeraProMed";
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+}
+
+.delivery__list {
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 30px;
+}
+
+.delivery__item {
+  padding-left: 27px;
+  position: relative;
+}
+
+.delivery__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 1190px) {
+  .delivery {
+    padding: 134px 214px 139px 217px;
+  }
+}
+@media (max-width: 900px) {
+  .delivery {
+    padding: 86px 114px 139px 117px;
+  }
+}
+@media (max-width: 768px) {
+  .delivery {
+    padding: 86px 15px 90px 15px;
+  }
+  .delivery-img {
+    min-height: 420px;
+  }
+  .about_delivery-back-page,
+.delivery__body-title {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .delivery__body-title {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-size: 36px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .delivery-img {
+    -o-object-position: 35% 50%;
+       object-position: 35% 50%;
+  }
+}
