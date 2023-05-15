@@ -1,0 +1,21 @@
+@import url(style.scss);
+
+.real-society__button {
+  max-width: 270px;
+  padding: 28px 47px;
+  margin: auto;
+}
+.working-process__body-special-text {
+  padding-top: 70px;
+}
+
+@media (max-width: 768px) {
+  .feedback-info-body img:nth-child(1) {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+    .about__body-title {
+        max-width: 270px;
+    }
+}
