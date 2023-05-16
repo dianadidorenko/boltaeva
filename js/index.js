@@ -20,12 +20,10 @@ function burgerMenu(selector) {
       // calling burger menu
       $("body").css("overflow", "hidden");
       $(".header__body").css("left", "-1000px");
-      console.log("OK9");
     } else {
       // when clicking outside the burger menu
       $("body").css("overflow", "visible");
       $(".header__body").css("left", "0");
-      console.log("OK10");
     }
   }
 }
