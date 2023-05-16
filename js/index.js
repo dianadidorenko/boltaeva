@@ -1,4 +1,4 @@
-// // Burger menu
+// Burger menu
 
 function burgerMenu(selector) {
   let menu = $(selector);
@@ -17,11 +17,15 @@ function burgerMenu(selector) {
   function toggleMenu() {
     menu.toggleClass("burger-menu_active");
     if (menu.hasClass("burger-menu_active")) {
+      // calling burger menu
       $("body").css("overflow", "hidden");
       $(".header__body").css("left", "-1000px");
+      console.log("OK9");
     } else {
+      // when clicking outside the burger menu
       $("body").css("overflow", "visible");
       $(".header__body").css("left", "0");
+      console.log("OK10");
     }
   }
 }
@@ -83,6 +87,19 @@ let headerFormAuth = document.getElementById("authorization-form"),
   wrapper = document.querySelector(".wrapper");
 
 headerFormToggleAuth.onclick = function () {
+  headerFormAuth.style.display = "flex";
+  wrapper.style.display = "none";
+};
+headerFormCloseAuth.onclick = function () {
+  headerFormAuth.style.display = "none";
+  wrapper.style.display = "block";
+};
+
+// Authorization Button Form 768px
+
+let headerFormToggleAuth768px = document.getElementById("clientButtonBurger");
+
+headerFormToggleAuth768px.onclick = function () {
   headerFormAuth.style.display = "flex";
   wrapper.style.display = "none";
 };
@@ -159,6 +176,7 @@ FormToggleSearch.addEventListener("click", function () {
       });
     } else {
       // Nothing Found Search Page Form
+      console.log("NO");
       FormSearchPage.style.display = "none";
       notFoundPage.style.display = "block";
       FormNotFoundClose.style.display = "block";
@@ -195,4 +213,65 @@ FormToggleSearchPage.addEventListener("click", function () {
     wrapper.style.opacity = "1";
     FormClosePage.style.display = "none";
   });
+});
+
+// Search Pop Up Form 768px
+
+let FormToggleSearchBurger = document.getElementById("searchButtonBurger"),
+  burgerMenuSeacrh = document.querySelector(".burger-menu"),
+  headerBodySearch = document.querySelector(".header__body");
+
+FormToggleSearchBurger.addEventListener("click", function () {
+  // calling burger menu search form
+  FormSearch.style.display = "block";
+  wrapper.style.opacity = "0.3";
+  FormClose.style.display = "block";
+  burgerMenuSeacrh.style.display = "none";
+
+  button.onclick = function () {
+    // when typing value in search input
+    inputIn.value = inputIn.value.toLowerCase();
+    if (
+      inputIn.value == "care cosmetics" ||
+      inputIn.value == "decorative cosmetics" ||
+      inputIn.value == "eyebrow cosmetics" ||
+      inputIn.value == "accessories"
+    ) {
+      if (burgerMenuSeacrh.style.display == "none") {
+        // when typing value suits search input condition
+        $(".header__body").css("left", "-1000px");
+        burgerMenuSeacrh.style.display = "flex";
+        searchPageClose.style.display = "block";
+        inputIn.value = "";
+      }
+    } else {
+      // Nothing Found Search Page Form
+      // when typing value doesn't suit search input condition
+      FormSearchPage.style.display = "none";
+      notFoundPage.style.display = "block";
+      FormNotFoundClose.style.display = "block";
+      inputIn.value = "";
+
+      FormNotFoundClose.onclick = function () {
+        FormSearch.style.display = "none";
+        wrapper.style.opacity = "1";
+        notFoundPage.style.display = "none";
+        burgerMenuSeacrh.style.display = "flex";
+      };
+    }
+  };
+});
+
+FormClose.addEventListener("click", function () {
+  // when clicking outside burger menu search form
+  FormSearch.style.display = "none";
+  wrapper.style.opacity = "1";
+
+  if (burgerMenuSeacrh.style.display == "none") {
+    // when clicking outside burger menu search form and return burger menu
+    $(".header__body").css("left", "-1000px");
+    burgerMenuSeacrh.style.display = "flex";
+  } else {
+    $(".header__body").css("left", "0");
+  }
 });
