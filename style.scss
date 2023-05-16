@@ -382,6 +382,7 @@ input[type="search"]::-webkit-search-results-decoration {
 @media (max-width: 1300px) {
   .search__body__items {
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
   }
   .search__body__items .gallery-item {
     width: 267px;
