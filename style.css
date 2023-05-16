@@ -468,6 +468,7 @@ input[type="search"]::-webkit-search-results-decoration {
   -webkit-column-gap: 20px;
   -moz-column-gap: 20px;
   column-gap: 20px;
+  row-gap: 20px;
 }
 
 .search-page-button {
