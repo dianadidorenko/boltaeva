@@ -672,32 +672,6 @@ input[type="search"]::-webkit-search-results-decoration {
   font-family: "CeraProLight";
 }
 
-@media (max-width: 1300px) {
-  .search__body__items {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .search__body__items .gallery-item {
-    width: 267px;
-    height: 371x;
-  }
-}
-@media (max-width: 1000px) {
-  .search-page {
-    overflow-y: auto;
-  }
-  .search__body__items {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 600px) {
-  .search__body {
-    padding: 50px 15px 71px 15px;
-  }
-  .search__body__items {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 // Authorization, Registration, Recovery password Form
 
 @media (max-width: 900px) {
