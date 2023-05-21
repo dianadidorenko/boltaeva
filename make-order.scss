@@ -116,6 +116,7 @@
   padding: 13px 190px 13px 23px;
   font-size: 16px;
   line-height: 180%; // 29px
+  max-width: 305px;
 }
 #toWhomDeliver {
   margin-bottom: 23px;
@@ -309,7 +310,7 @@
     max-width: 350px;
   }
   .make-order__form .input {
- min-width: 350px;
- padding-right: 120px;
-}
+    min-width: 350px;
+    padding-right: 120px;
+  }
 }
