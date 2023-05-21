@@ -485,7 +485,6 @@ body {
     font-size: 30px;
   }
 }
-
 @media (max-width: 460px) {
   .header .swiper-slide img {
     object-position: 73% 50%;
@@ -676,9 +675,6 @@ input[type="search"]::-webkit-search-results-decoration {
   .search__body__items {
     grid-template-columns: repeat(1, 1fr);
   }
-  // .see-catalog__button {
-  //   padding: 30px 100px 31px 100px;
-  // }
 }
 
 // Search Page Form
@@ -1111,7 +1107,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 14px;
   }
   .input-pass-p {
-    top: 92px;
+    top: 93px;
     right: 10px;
     font-size: 10px;
   }
