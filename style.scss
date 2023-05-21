@@ -1077,7 +1077,7 @@ input[type="search"]::-webkit-search-results-decoration {
   }
   .header-form-reg {
     width: 350px;
-        padding: 80px 30px 35px 30px;
+        padding: 40px 30px 35px 30px;
   }
   .header-form__form {
     width: 250px;
@@ -1124,6 +1124,12 @@ input[type="search"]::-webkit-search-results-decoration {
     right: 3.7px;
   }
 }
+@media (max-width: 429px) {
+  .header-form-reg {
+    width: 350px;
+        padding: 80px 30px 35px 30px;
+  }
+  }
 
 // Authorization, Registration, Recovery password Form
 
