@@ -353,14 +353,9 @@
       align-self: flex-end;
 }
 
-.gallery .gallery-swiper-button-prev-1 {
-  position: static;
-  border-radius: 10px 0 0 10px;
-}
-
+.gallery .gallery-swiper-button-prev-1,
 .gallery .gallery-swiper-button-next-1 {
   position: static;
-  border-radius: 0 10px 10px 0;
 }
 
 .gallery-swiper-button-next-1 img {
@@ -370,6 +365,7 @@
 
 .gallery-swiper-button-prev-1 img {
   background: #eee4da;
+  border-radius: 10px 0 0 10px;
 }
 
 @media (max-width: 768px) {

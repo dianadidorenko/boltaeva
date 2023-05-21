@@ -1,9 +1,5 @@
 @import url(style.css);
 
-.page__contacts {
-}
-.contacts {
-}
 .contacts__container {
   padding-bottom: 110px;
 }
@@ -64,8 +60,6 @@
   width: 100%;
   height: 550px;
 }
-.contacts__gallery-block {
-}
 .contacts__gallery-text-soc {
   padding-top: 73px;
   padding-bottom: 50px;
@@ -83,12 +77,6 @@
   display: flex;
   align-items: center;
   column-gap: 26px;
-}
-.real-society__items {
-}
-.real-society__item {
-}
-.no-see {
 }
 
 @media (max-width: 1250px) {
@@ -159,8 +147,6 @@
 .page__product-form {
   padding-bottom: 140px;
 }
-.product-form__container {
-}
 .product-form {
   display: flex;
   flex-direction: column;
@@ -182,8 +168,6 @@
 }
 .product-form__right-part img {
   min-height: 400px;
-}
-.product-form-logo {
 }
 .right-part__title {
   padding-top: 70px;
@@ -237,8 +221,6 @@
 }
 .product-form__button:hover {
   filter: contrast(0.9);
-}
-.product-form__right-part {
 }
 
 @media (max-width: 1200px) {

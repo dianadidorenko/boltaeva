@@ -27,35 +27,23 @@ function burgerMenu(selector) {
 }
 burgerMenu(".burger-menu");
 
-// Swiper for Gallery Slider 1
+// Choose a shipping method method
 
-const swiperGallery1 = new Swiper(".profile-swiper-1", {
-  direction: "horizontal",
-  loop: true,
-  navigation: {
-    nextEl: ".profile-swiper-button-next-1",
-    prevEl: ".profile-swiper-button-prev-1",
-  },
+$("select#toWhomDeliver").on("change", function () {
+  $('input[name="deliver"]').val(this.value);
 });
 
-// Swiper for Gallery Slider 2
-
-const swiperGallery2 = new Swiper(".profile-swiper-2", {
-  direction: "horizontal",
-  loop: true,
-  navigation: {
-    nextEl: ".profile-swiper-button-next-2",
-    prevEl: ".profile-swiper-button-prev-2",
-  },
+$("select#howToDeliver").on("change", function () {
+  $('input[name="how"]').val(this.value);
 });
 
-// Swiper for Gallery Slider 3
+// Make Order Slider
 
-const swiperGallery3 = new Swiper(".profile-swiper-3", {
+const swiperMakeOrder = new Swiper(".make-order-swiper-1", {
   direction: "horizontal",
   loop: true,
   navigation: {
-    nextEl: ".profile-swiper-button-next-3",
-    prevEl: ".profile-swiper-button-prev-3",
+    nextEl: ".make-order-swiper-button-next-1",
+    prevEl: ".make-order-swiper-button-prev-1",
   },
 });

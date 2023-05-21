@@ -12,7 +12,6 @@
     <title>Home</title>
   </head>
   <body>
-    
     <!-- Authorization Form -->
     <div id="authorization-form" class="header-form-auth">
       <img
@@ -125,13 +124,17 @@
         /></a>
       </div>
       <div class="search-close"></div>
-    </div>    
+    </div>
     <!-- Search Pop Up Form -->
 
     <!-- Search Page Form -->
     <div class="search-page">
       <div class="search-page-input__block">
-        <input type="search" class="search-page-form__input" placeholder="Cosmetics"/>
+        <input
+          type="search"
+          class="search-page-form__input"
+          placeholder="Cosmetics"
+        />
         <a href="#" class="search-page-button" id="lead-to-search-page"
           ><img src="img/MAIN/SEARCH-FORM/search.svg" alt="Search Icon"
         /></a>
@@ -240,18 +243,200 @@
     <!-- Nothing Found Search Page Form -->
     <div class="search-not-found">
       <div class="search-not-found-input__block">
-        <input type="search" class="search-not-found-form__input" placeholder="Cosmetics"/>
+        <input
+          type="search"
+          class="search-not-found-form__input"
+          placeholder="Cosmetics"
+        />
         <a href="#" class="search-page-button" id="lead-to-search-page"
           ><img src="img/MAIN/SEARCH-FORM/search.svg" alt="Search Icon"
         /></a>
       </div>
       <div class="search-not-found__body">
         <h1 class="search-not-found__body-h1">Sorry</h1>
-        <p class="search-not-found__body-text">Nothing was found for your query</p>
+        <p class="search-not-found__body-text">
+          Nothing was found for your query
+        </p>
       </div>
       <div class="search-page-close-not-found"></div>
     </div>
     <!-- Nothing Found Search Page Form -->
+
+    <!-- Shopping Cart Form -->
+    <div class="shopping-cart-form">
+      <div class="shopping-cart-form__container">
+        <div class="shopping-cart-form-close">
+          <span class="header-form__lines close-shop-cart"></span>
+        </div>
+        <div class="your-cart__body">
+          <div class="your-cart__block">
+            <h1 class="your-cart__block-title">Your cart</h1>
+            <p class="your-cart__block-text">2 products</p>
+          </div>
+          <div class="your-cart__main-block">
+            <div class="your-cart__main-block-img-about">
+              <div class="your-cart__image">
+                <a href="card-product-bottle.html">
+                  <img src="img/SHOPPING-CART/01.png" alt="Shopping Cart Image"
+                /></a>
+              </div>
+              <div class="your-cart__about-product">
+                <h3 class="favorite-title">Perfect brows</h3>
+                <div class="your-cart-favorite">
+                  <img
+                    class="favorite-icon-fav"
+                    src="img/SHOPPING-CART/favorite.svg"
+                    alt="Favorite Icon"
+                  />
+                  <a href="#" class="favorite-text">Add to favorites</a>
+                </div>
+                <div class="shopping-cart-favorite-quantity-block">
+                  <p class="shopping-cart-favorite-quantity">
+                    <span class="minus">-</span>
+                    <span class="number-favorite">1</span>
+                    <span id="plus" class="plus">+</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="your-cart__price">
+              <p class="favorite-price">54 €</p>
+            </div>
+          </div>
+          <div class="your-cart__main-block">
+            <div class="your-cart__main-block-img-about">
+              <div class="your-cart__image">
+                <a href="card-product-milk.html">
+                  <img src="img/SHOPPING-CART/02.png" alt="Shopping Cart Image"
+                /></a>
+              </div>
+              <div class="your-cart__about-product">
+                <h3 class="favorite-title">Perfect brows</h3>
+                <div class="your-cart-favorite">
+                  <img
+                    class="favorite-icon-fav"
+                    src="img/SHOPPING-CART/favorite.svg"
+                    alt="Favorite Icon"
+                  />
+                  <a href="#" class="favorite-text">Add to favorites</a>
+                </div>
+                <div class="shopping-cart-favorite-quantity-block">
+                  <p class="shopping-cart-favorite-quantity">
+                    <span class="minus">-</span>
+                    <span class="number-favorite">1</span>
+                    <span id="plus" class="plus">+</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="your-cart__price">
+              <p class="favorite-price">54 €</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="total__body">
+          <div class="total__body-text">
+            <h2 class="total__body-title">Total:</h2>
+            <p class="total__body-price">108 €</p>
+          </div>
+          <a href="make-order.html" class="total__body-button"
+            >Place an order
+            <img src="img/SHOPPING-CART/arrow-right.svg" alt="Arrow Right Icon"
+          /></a>
+        </div>
+
+        <div class="your-favorites__block">
+          <div class="your-favorites__text-block">
+            <div class="your-favorites__text-block">
+              <h2 class="your-favorites__block-title">Your favorites</h2>
+
+              <div class="your-favorites-pagination">
+                <!-- If we need navigation buttons -->
+                <div
+                  class="swiper-button-prev your-favorites-swiper-button-prev"
+                >
+                  <img
+                    src="img/CARD-PRODUCT-MILK/arrow-left-brown.svg"
+                    alt="Left Arrow Icon"
+                  />
+                </div>
+                <div
+                  class="swiper-button-next your-favorites-swiper-button-next"
+                >
+                  <img
+                    src="img/CARD-PRODUCT-MILK/arrow-right-brown.svg"
+                    alt="Right Arrow Icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider main container -->
+          <div class="swiper shopping-cart-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper shopping-cart-swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="shopping-cart-item">
+                  <a href="card-product-bottle.html">
+                    <img
+                      class="shopping-cart-item-image"
+                      src="img/SHOPPING-CART/03.png"
+                      alt="Shopping Cart Image"
+                  /></a>
+                </div>
+
+                <div class="shopping-cart-item no-see-3">
+                  <a href="card-product-milk.html">
+                    <img
+                      src="img/SHOPPING-CART/04.png"
+                      alt="Shopping Cart Image"
+                  /></a>
+                </div>
+
+                <div class="shopping-cart-item no-see-2">
+                  <a href="card-product-pencil.html">
+                    <img
+                      src="img/SHOPPING-CART/05.png"
+                      alt="Shopping Cart Image"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="shopping-cart-item">
+                  <a href="card-product-bottle.html">
+                    <img
+                      class="shopping-cart-item-image"
+                      src="img/SHOPPING-CART/03.png"
+                      alt="Shopping Cart Image"
+                  /></a>
+                </div>
+
+                <div class="shopping-cart-item no-see-3">
+                  <a href="card-product-milk.html">
+                    <img
+                      src="img/SHOPPING-CART/04.png"
+                      alt="Shopping Cart Image"
+                  /></a>
+                </div>
+
+                <div class="shopping-cart-item no-see-2">
+                  <a href="card-product-pencil.html">
+                    <img
+                      src="img/SHOPPING-CART/05.png"
+                      alt="Shopping Cart Image"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Shopping Cart Form -->
 
     <div class="wrapper">
       <header class="header">
@@ -294,6 +479,7 @@
                 </a>
                 <a href="#" class="nav__block-item nav__block-item-2">
                   <img
+                    id="shopping-cart"
                     src="img/MAIN/header-slider/shop.svg"
                     class="shop-icon"
                     alt="Shop Icon"
@@ -312,7 +498,7 @@
           </div>
 
           <!-- Burger Menu  -->
-         <div class="burger-menu">
+          <div class="burger-menu">
             <a href="#" class="burger-menu__button"
               ><span class="burger-menu__lines"></span
             ></a>

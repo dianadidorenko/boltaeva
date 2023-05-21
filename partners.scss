@@ -1,9 +1,5 @@
 @import url(style.scss);
 
-.header__body {
-  position: absolute;
-  padding: 51px 0 53px 0;
-}
 .real-society__button {
   max-width: 270px;
   padding: 28px 47px;
@@ -19,7 +15,7 @@
   }
 }
 @media (max-width: 768px) {
-  .about__body-title {
-    max-width: 270px;
-  }
+    .about__body-title {
+        max-width: 270px;
+    }
 }

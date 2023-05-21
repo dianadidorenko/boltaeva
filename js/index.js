@@ -20,10 +20,12 @@ function burgerMenu(selector) {
       // calling burger menu
       $("body").css("overflow", "hidden");
       $(".header__body").css("left", "-1000px");
+      console.log("OK9");
     } else {
       // when clicking outside the burger menu
       $("body").css("overflow", "visible");
       $(".header__body").css("left", "0");
+      console.log("OK10");
     }
   }
 }
@@ -66,7 +68,7 @@ const swiperGallery2 = new Swiper(".gallery-swiper-2", {
   },
 });
 
-// Swiper for Header Home Gallery Slider 2
+// Swiper for Header Home Gallery Slider 3
 
 const swiperGallery3 = new Swiper(".gallery-swiper-3", {
   direction: "horizontal",
@@ -272,4 +274,31 @@ FormClose.addEventListener("click", function () {
   } else {
     $(".header__body").css("left", "0");
   }
+});
+
+// Shopping Cart Slider
+
+const swiperShoppingCart = new Swiper(".shopping-cart-swiper", {
+  direction: "horizontal",
+  loop: true,
+  navigation: {
+    nextEl: ".your-favorites-swiper-button-next",
+    prevEl: ".your-favorites-swiper-button-prev",
+  },
+});
+
+// Shopping Cart Form
+
+let FormToggleShopCartButton = document.getElementById("shopping-cart"),
+  shoppingCartForm = document.querySelector(".shopping-cart-form"),
+  closeCartFormButton = document.querySelector(".close-shop-cart");
+
+FormToggleShopCartButton.addEventListener("click", function () {
+  shoppingCartForm.style.display = "block";
+  wrapper.style.opacity = "0.3";
+});
+
+closeCartFormButton.addEventListener("click", function () {
+  shoppingCartForm.style.display = "none";
+  wrapper.style.opacity = "1";
 });

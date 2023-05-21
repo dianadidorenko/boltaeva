@@ -9,8 +9,11 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="catalog.css" />
-    <link rel="stylesheet" href="work-process.css" />
+    <!-- <link rel="stylesheet" href="catalog.css" /> -->
+    <!-- <link rel="stylesheet" href="card-product-milk.css" /> -->
+    <!-- <link rel="stylesheet" href="profile.css" /> -->
+    <link rel="stylesheet" href="make-order.css" />
+
     <title>Home</title>
   </head>
   <body>
@@ -56,7 +59,10 @@
                     alt="Shop Icon"
                   />
                 </a>
-                <a href="profile.html" class="nav__block-item nav__block-item-3">
+                <a
+                  href="profile.html"
+                  class="nav__block-item nav__block-item-3"
+                >
                   <img
                     class="client-icon"
                     src="img/CATALOG/header/client.svg"
@@ -164,81 +170,195 @@
       </header>
 
       <main class="page">
-        <section class="page__working-process working-process">
-          <div class="working-process__body">
-            <div class="working-process__body-back-page">
-              <a href="index.html">
-                <img src="img/ABOUT/arrow-left.svg" alt="Arrow Left Icon"
-              /></a>
-              <p>To back page</p>
-            </div>
-            <h1 class="working-process__body-title">Working process</h1>
-            <p class="working-process__body-text">
-              The brand seeks to build respect among the audience for its
-              products, so that the presence of the company's products is a sign
-              of prestige, since the focus of the business is focused on
-              exclusive sales, but not on the mass market. The brand seeks to
-              build respect among the audience for its products, so that the
-              presence of the company's products is a sign of prestige, since
-              the focus of the business is focused on exclusive sales, but not
-              on the mass market.
-            </p>
-            <p class="working-process__body-special-text">
-              Each Boltaeva brand product is truly unique - everything is
-              thought out to the smallest detail.
-            </p>
-            <div class="working-process__body-feedback">
-              <p class="feedback-text">
-                The brand seeks to build respect among the audience for its
-                products, so that the presence of the company's products is a
-                sign of prestige, since the focus of the business is focused on
-                exclusive sales, but not on the mass market.
-              </p>
-              <div class="working-process-feedback-info-body">
-                <div class="working-process-feedback-info">
-                  <img src="img/ABOUT/boltaeva-pic.png" alt="Zara Boltaeva" />
-                  <div class="working-process-feedback-name-position">
-                    <p class="working-process-feedback-name">Zara Boltaeva</p>
-                    <p class="working-process-feedback-position">
-                      CEO, Founder
-                    </p>
-                  </div>
+        <section class="make-order__page make-order">
+          <div class="make-order__left-part">
+            <div class="make-order__left-part__container">
+              <div class="make-order__left-part-form">
+                <h1 class="make-order__title">Checkout</h1>
+                <form class="make-order__form">
+                  <p>Surname, name and patronymic</p>
+                  <input type="text" class="input" placeholder="Rosa More" />
+                  <p>Country, city, address</p>
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="UAE, Dubai, 54 st. 560 of."
+                  />
+                  <p>Contact number</p>
+                  <input
+                    type="tel"
+                    class="input"
+                    placeholder="+ 3 (097) 437 - 92 - 24"
+                  />
+                  <p>Email</p>
+                  <input type="email" class="input" placeholder="Rosamorena@gmail.com" />
+                </form>
+              </div>
+              <div class="make-order__right-part-details">
+                <p class="make-order__right-part-details__favorite">
+                  <img src="img/MAKE-ORDER/favorite.svg" alt="Favorite icon" />
+                  Add all products to favorites
+                </p>
+                <h3>Set up in a couple of minutes</h3>
+                <p class="make-order__right-part-details__h3-undertext">
+                  If you are already registered on the site, then you just need
+                  to enter your profile so as not to enter information again.
+                </p>
+                <p class="make-order__right-part-details__signin">
+                  <a href="#">
+                    <img
+                      src="img/MAKE-ORDER/client.svg"
+                      alt="Client Icon"
+                    />Sign in</a
+                  >
+                </p>
+                <div class="make-order_right-part-details__choose-method">
+                  <h4>Choose a shipping method</h4>
+
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                  <select id="toWhomDeliver">
+                    <option value="FedEx">FedEx</option>
+                    <option value="Nova Poshta">Nova Poshta</option>
+                    <option value="Ukr Poshta">Ukr Poshta</option>
+                    <option value="Meest">Meest</option>
+                  </select>
+
+                  <select id="howToDeliver">
+                    <option value="To door">To door</option>
+                    <option value="Сourier">Сourier</option>
+                    <option value="Post office">Post office</option>
+                  </select>
                 </div>
-                <img src="img/ABOUT/sign.svg" alt="Signature" />
+                <p class="make-order__right-part-details__shipping-cost">
+                  Shipping cost is calculated individually by the manager
+                </p>
               </div>
             </div>
-            <p class="working-process__body-text working-process__body-text-2">
-              The brand seeks to build respect among the audience for its
-              products, so that the presence of the company's products is a sign
-              of prestige, since the focus of the business is focused on
-              exclusive sales, but not on the mass market.
-            </p>
-            <div class="working-process-image-block">
-              <img
-                src="img/WORK-PROCESS/01.png"
-                class="working-process-image"
-                alt="Working Process Image"
-              />
-              <img
-                src="img/WORK-PROCESS/768px/01.png"
-                class="working-process-image-768px"
-                alt="Working Process Image"
-              />
-              <a href="#"
-                ><img
-                  src="img/WORK-PROCESS/02.svg"
-                  class="w-p-video-icon"
-                  alt="Video Icon"
-                /></a
-              >
-            </div>
-            <p class="working-process__body-text working-process__body-text-3">
-              The brand seeks to build respect among the audience for its
-              products, so that the presence of the company's products is a sign
-              of prestige, since the focus of the business is focused on
-              exclusive sales, but not on the mass market.
-            </p>
           </div>
+
+          <aside class="make-order__right-part">
+              <div class="make-order__right-part-block-title">
+                <div class="make-order__right-part-text-block">
+                  <h2 class="make-order__right-part-title">Order</h2>
+                  <div class="make-order__text-products">
+                    <p class="make-order__text-products-title">8 products</p>
+                  </div>
+                </div>
+                <div class="make-order-pagination-1">
+                  <!-- If we need navigation buttons -->
+                  <div
+                    class="swiper-button-prev make-order-swiper-button-prev-1"
+                  >
+                    <img
+                      src="img/CARD-PRODUCT-MILK/arrow-left-brown.svg"
+                      alt="Left Arrow Icon"
+                    />
+                  </div>
+                  <div
+                    class="swiper-button-next make-order-swiper-button-next-1"
+                  >
+                    <img
+                      src="img/CARD-PRODUCT-MILK/arrow-right-brown.svg"
+                      alt="Right Arrow Icon"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slider main container -->
+              <div class="swiper make-order-swiper-1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper make-order-swiper-wrapper-1">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="make-order-item">
+                      <a href="card-product-bottle.html">
+                        <img
+                          class="make-order-item-image"
+                          src="img/MAKE-ORDER/01.png"
+                          alt="Make Order Image"
+                      /></a>
+                    </div>
+                    <div class="make-order-item">
+                      <a href="card-product-milk.html">
+                        <img src="img/MAKE-ORDER/02.png" alt="Make Order Image"
+                      /></a>
+                    </div>
+                    <div class="make-order-item">
+                      <a href="card-product-pencil.html">
+                        <img src="img/MAKE-ORDER/03.png" alt="Make Order Image"
+                      /></a>
+                    </div>
+                    <div class="make-order-item">
+                      <a href="card-product-milk.html">
+                        <img src="img/MAKE-ORDER/02.png" alt="Make Order Image"
+                      /></a>
+                    </div>
+                    <div class="make-order-item">
+                      <a href="card-product-pencil.html">
+                        <img src="img/MAKE-ORDER/03.png" alt="Make Order Image"
+                      /></a>
+                    </div>
+                    <div class="make-order-item">
+                      <a href="card-product-bottle.html">
+                        <img
+                          class="make-order-item-image"
+                          src="img/MAKE-ORDER/01.png"
+                          alt="Make Order Image"
+                      /></a>
+                    </div>
+                  </div>
+                   <div class="swiper-slide">
+                    <div class="make-order-item">
+                      <a href="card-product-bottle.html">
+                        <img
+                          class="make-order-item-image"
+                          src="img/MAKE-ORDER/01.png"
+                          alt="Make Order Image"
+                      /></a>
+                    </div>
+                    <div class="make-order-item">
+                      <a href="card-product-milk.html">
+                        <img src="img/MAKE-ORDER/02.png" alt="Make Order Image"
+                      /></a>
+                    </div>
+                    <div class="make-order-item">
+                      <a href="card-product-pencil.html">
+                        <img src="img/MAKE-ORDER/03.png" alt="Make Order Image"
+                      /></a>
+                    </div>
+                    <div class="make-order-item">
+                      <a href="card-product-milk.html">
+                        <img src="img/MAKE-ORDER/02.png" alt="Make Order Image"
+                      /></a>
+                    </div>
+                    <div class="make-order-item">
+                      <a href="card-product-pencil.html">
+                        <img src="img/MAKE-ORDER/03.png" alt="Make Order Image"
+                      /></a>
+                    </div>
+                    <div class="make-order-item">
+                      <a href="card-product-bottle.html">
+                        <img
+                          class="make-order-item-image"
+                          src="img/MAKE-ORDER/01.png"
+                          alt="Make Order Image"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="make-order__right-part__total">
+                <p>Total:</p>
+                <p>54 €</p>
+              </div>
+              <a href="#" class="make-order__right-part__button">Send you order <img src="img/MAKE-ORDER/arrow-right.svg" alt="Arrow Right Icon"></a>
+              <p class="make-order__right-part__edit">
+                <img src="img/MAKE-ORDER/edit.svg" alt="Edit Icon" />Edit this
+                order
+              </p>
+          </aside>
         </section>
       </main>
 
@@ -353,6 +473,6 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/catalog.js"></script>
+    <script src="js/make-order.js"></script>
   </body>
 </html>

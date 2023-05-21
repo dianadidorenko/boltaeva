@@ -17,13 +17,11 @@ function burgerMenu(selector) {
   function toggleMenu() {
     menu.toggleClass("burger-menu_active");
     if (menu.hasClass("burger-menu_active")) {
-      // calling burger menu
       $("body").css("overflow", "hidden");
-      $(".header__body").css("left", "-1000px");
+      $(".header__body").css("display", "none");
     } else {
-      // when clicking outside the burger menu
       $("body").css("overflow", "visible");
-      $(".header__body").css("left", "0");
+      $(".header__body").css("display", "flex");
     }
   }
 }
